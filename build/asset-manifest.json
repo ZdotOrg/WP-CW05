@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/WP-CW05/static/css/main.b1e9c032.css",
+    "main.js": "/WP-CW05/static/js/main.ce1e274d.js",
+    "static/js/453.ea1371c4.chunk.js": "/WP-CW05/static/js/453.ea1371c4.chunk.js",
+    "index.html": "/WP-CW05/index.html",
+    "main.b1e9c032.css.map": "/WP-CW05/static/css/main.b1e9c032.css.map",
+    "main.ce1e274d.js.map": "/WP-CW05/static/js/main.ce1e274d.js.map",
+    "453.ea1371c4.chunk.js.map": "/WP-CW05/static/js/453.ea1371c4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1e9c032.css",
+    "static/js/main.ce1e274d.js"
+  ]
+}
