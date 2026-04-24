@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import HelloWorld from './HelloWorld';
-import Counter from './Counter';
-import FilteredList from './FilteredList';
+import HelloWorld from './components/HelloWorld';
+import Counter from './components/Counter';
+import FilteredList from './components/FilteredList';
 
 const produce = [
     { name: "Apple", type: "Fruit" },

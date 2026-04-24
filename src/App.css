@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .App-logo {
@@ -34,5 +38,149 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* ===== NEW STYLES BELOW ===== */
+
+/* HelloWorld Component */
+h1 {
+  color: #282c34;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #61dafb;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* Counter Component */
+.counter-container {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 30px 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.counter-container h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.counter-display {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.counter-buttons button {
+  background: white;
+  color: #667eea;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.counter-buttons button:hover {
+  transform: scale(1.1);
+  background: #f0f0f0;
+}
+
+.counter-buttons button:active {
+  transform: scale(0.95);
+}
+
+/* FilteredList Component */
+.filter-container {
+  background: #f5f5f5;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 30px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.filter-container h2 {
+  color: #282c34;
+  margin-top: 0;
+}
+
+.filter-select {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border: 2px solid #61dafb;
+  border-radius: 25px;
+  background: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.filter-select:hover,
+.filter-select:focus {
+  border-color: #667eea;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.item-list li {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  font-weight: 500;
+}
+
+.item-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Fruit and Vegetable badges */
+.item-list li[data-type="Fruit"] {
+  border-left: 5px solid #ff6b6b;
+}
+
+.item-list li[data-type="Vegetable"] {
+  border-left: 5px solid #51cf66;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .counter-display {
+    font-size: 3rem;
+  }
+  
+  .item-list {
+    grid-template-columns: 1fr;
   }
 }
